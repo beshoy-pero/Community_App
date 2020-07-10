@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "124227345238",
+    "firebase_url": "https://community-app-4b457.firebaseio.com",
+    "project_id": "community-app-4b457",
+    "storage_bucket": "community-app-4b457.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124227345238:android:55ac0e9c4628b5605994f7",
+        "android_client_info": {
+          "package_name": "com.beshoykamal.communityapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124227345238-c99abt678fahcrtqcktheekvhjap7u5i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMNkSTYqi1SLNjut1Rkl_qQmQ0cwni1F8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124227345238-c99abt678fahcrtqcktheekvhjap7u5i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

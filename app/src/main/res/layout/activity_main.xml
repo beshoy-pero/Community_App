@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    tools:context=".Activitys.ui.logIn.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/regprofilpic"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="90dp"
+        android:onClick="profilpic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/regprofilpic"
+        app:layout_constraintEnd_toEndOf="@+id/regprofilpic"
+        app:layout_constraintStart_toStartOf="@+id/regprofilpic"
+        app:layout_constraintTop_toTopOf="@+id/regprofilpic"
+        app:srcCompat="@drawable/shape" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="298dp"
+        android:layout_height="366dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/iconcommunity" />
+
+    <EditText
+        android:id="@+id/regname"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/reg_edit_styl"
+        android:ems="10"
+        android:hint="Name."
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regprofilpic" />
+
+    <EditText
+        android:id="@+id/regemail"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/reg_edit_styl"
+        android:ems="10"
+        android:hint="Email."
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regname" />
+
+    <EditText
+        android:id="@+id/regpassword"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/reg_edit_styl"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regemail" />
+
+    <EditText
+        android:id="@+id/regpassword2"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/reg_edit_styl"
+        android:ems="10"
+        android:hint="Confirm password"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regpassword" />
+
+    <Button
+        android:id="@+id/regptn"
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/shape"
+        android:onClick="regist"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="@+id/regpassword2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regpassword2" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="@+id/regptn"
+        app:layout_constraintStart_toStartOf="@+id/regptn"
+        app:layout_constraintTop_toTopOf="@+id/regptn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

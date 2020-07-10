@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/popuTitle"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/morap"
+        android:ems="10"
+        android:hint="Titele"
+        android:inputType="textPersonName"
+        android:paddingStart="30dp"
+        android:elevation="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/popuDisc"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/morap"
+        android:ems="10"
+        android:hint="Discreptiion"
+        android:inputType="textPersonName"
+        android:paddingStart="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popuTitle" />
+
+    <ImageView
+        android:id="@+id/popuImg_profil"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="10dp"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/popuTitle"
+        app:layout_constraintEnd_toEndOf="@+id/popuTitle"
+        tools:srcCompat="@tools:sample/avatars[0]" />
+
+    <ImageView
+        android:id="@+id/popuimgpost"
+        android:layout_width="410dp"
+        android:layout_height="274dp"
+        android:background="@drawable/shappost"
+        android:onClick="postimg"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popuDisc"
+        tools:srcCompat="@tools:sample/backgrounds/scenic[1]" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="404dp" />
+
+    <ImageView
+        android:id="@+id/popuPin1"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        app:layout_constraintEnd_toEndOf="@+id/popuPin2"
+        app:layout_constraintStart_toStartOf="@+id/popuPin2"
+        app:layout_constraintTop_toTopOf="@+id/popuPin2"
+        app:srcCompat="@drawable/shapesquerplack" />
+
+    <ImageView
+        android:id="@+id/popuPin2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:srcCompat="@drawable/shap_squer" />
+
+    <ImageView
+        android:id="@+id/popuPin"
+        android:layout_width="28dp"
+        android:layout_height="29dp"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="@+id/popuPin2"
+        app:layout_constraintStart_toStartOf="@+id/popuPin2"
+        app:layout_constraintTop_toTopOf="@+id/popuPin1"
+        app:srcCompat="@drawable/iconcommunity"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ProgressBar
+        android:id="@+id/popuprogres"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/popuPin1"
+        app:layout_constraintStart_toStartOf="@+id/popuPin2"
+        app:layout_constraintTop_toTopOf="@+id/popuPin1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
